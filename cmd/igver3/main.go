@@ -18,6 +18,8 @@ import (
 	"fmt"
 	"runtime/debug"
 
+	_ "k8s.io/client-go"
+
 	"github.com/blang/semver"
 	version "github.com/inspektor-gadget/inspektor-gadget/pkg/version"
 )
@@ -25,6 +27,7 @@ import (
 func main() {
 	fmt.Printf("version.Version: %v\n", version.Version())
 	fmt.Printf("version.VersionString: %v\n", version.VersionString())
+	fmt.Printf("version.UserAgent: %v\n", version.UserAgent())
 
 	gadgetBuilderVersionText := "v0.40.0"
 	gadgetBuilderVersion, err := semver.ParseTolerant(gadgetBuilderVersionText)
@@ -38,6 +41,8 @@ func main() {
 	fmt.Printf("isEQ(%v, %v) = %v\n", gadgetBuilderVersion, currentVersion, isEQ)
 
 	if info, ok := debug.ReadBuildInfo(); ok {
+		fmt.Printf("debug.ReadBuildInfo: %+v\n", info)
+		fmt.Printf("debug.ReadBuildInfo: Main: %+v\n", info.Main)
 		for _, dep := range info.Deps {
 			if dep.Path == "github.com/inspektor-gadget/inspektor-gadget" {
 				fmt.Printf("IG package: %+v\n", dep)

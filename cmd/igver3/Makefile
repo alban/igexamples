@@ -1,6 +1,6 @@
 .PHONY: igver3
 igver3:
-	go build -o igver3 main.go
+	go build -o igver3 ./
 
 .PHONY: clean
 clean:

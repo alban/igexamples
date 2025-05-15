@@ -1,4 +1,6 @@
+github.com/alban/inspektor-gadget v0.40.1-0.20250515123231-d6b81d20dfa8 h1:S9XZbq1tEjaQsnM8iOAXaPM/D+7JLyYmFzMiEeXYkQc=
+github.com/alban/inspektor-gadget v0.40.1-0.20250515123231-d6b81d20dfa8/go.mod h1:Qb1ccxQerJz3DwPpIR1MS928Oi10+7hndAhpMtktub0=
 github.com/blang/semver v3.5.1+incompatible h1:cQNTCjp13qL8KC3Nbxr/y2Bqb63oX6wdnnjpJbkM4JQ=
 github.com/blang/semver v3.5.1+incompatible/go.mod h1:kRBLl5iJ+tD4TcOOxsy/0fnwebNt5EWlYSAyrTnjyyk=
-github.com/inspektor-gadget/inspektor-gadget v0.40.1-0.20250507120101-af92ca716686 h1:BO/Tds+j/87AfukA3AePH0I/U9a6ywUAOkaNeAIX4AI=
-github.com/inspektor-gadget/inspektor-gadget v0.40.1-0.20250507120101-af92ca716686/go.mod h1:W6tNNRa3QDFdrknnOnavk+HD8FI/XUGY6tY6PSonhAk=
+k8s.io/client-go v0.33.0 h1:UASR0sAYVUzs2kYuKn/ZakZlcs2bEHaizrrHUZg0G98=
+k8s.io/client-go v0.33.0/go.mod h1:kGkd+l/gNGg8GYWAPr0xF1rRKvVWvzh9vmZAMXtaKOg=
